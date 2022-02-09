@@ -11,7 +11,17 @@
 
 <body>
     <header class="l-header">
-
+        <h2>Kobayashi-PORTFOLIO</h2>
+        <nav>
+            <ul>
+                <a href="">
+                    <li>WORKS</li>
+                </a>
+                <a href="">
+                    <li>ABOUT</li>
+                </a>
+            </ul>
+        </nav>
     </header>
     <h2 class="text-2xl">Hello World!!</h2>
 </body>
