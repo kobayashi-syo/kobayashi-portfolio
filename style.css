@@ -542,15 +542,74 @@ textarea,
   position: absolute;
 }
 
-h2 {
-  color: red;
-  font-size: 2rem;
+body {
+  background-color: white;
+  font-family: "Montserrat", "Noto Sans JP", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
 }
 
 /* Layout */
 .l-header {
-  background-color: aquamarine;
+  background-color: beige;
 }
-.l-header h2 {
+.l-header .header-container {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+          justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1500px;
+}
+.l-header .header-container .logo-box h2 {
+  color: green;
+  font-size: 1.2rem;
+  margin-top: 1.2rem;
+  padding-left: 40px;
+}
+.l-header .header-container .nav-box {
+  padding-right: 40px;
+  padding-top: 8px;
+}
+.l-header .header-container .nav-box .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.l-header .header-container .nav-box .nav a {
+  color: black;
+  padding-left: 20px;
+  text-decoration: none;
+}
+.l-header .header-container .nav-box .nav a .nav-item {
+  font-size: 14px;
+}
+
+/* Component */
+/* Project */
+.p-top__first-view__container {
+  background-image: url(./img/top-first-view.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 67vh;
+  width: 100vw;
+}
+.p-top__first-view__container .title {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+          flex-direction: column;
+  height: 67vh;
+          justify-content: center;
   margin-top: 0;
+  text-align: center;
+}
+.p-top__first-view__container .title .profession {
+  font-size: 5rem;
 }

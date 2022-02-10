@@ -1,0 +1,23 @@
+.p-top{
+    &__first-view{
+        &__container{
+            width: 100vw;
+            height: 67vh;
+            background-image: url(./img/top-first-view.jpg);
+            background-size: cover;
+            background-position: center;
+            & .title{
+                margin-top: 0;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                height: 67vh;
+                text-align: center;
+                color: white;
+                & .profession{
+                    font-size: 5rem;
+                }
+            }
+        }
+    }
+}

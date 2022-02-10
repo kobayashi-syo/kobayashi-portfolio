@@ -11,19 +11,44 @@
 
 <body>
     <header class="l-header">
-        <h2>Kobayashi-PORTFOLIO</h2>
-        <nav>
-            <ul>
-                <a href="">
-                    <li>WORKS</li>
-                </a>
-                <a href="">
-                    <li>ABOUT</li>
-                </a>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <div class="logo-box">
+                <h2 class="logo">Kobayashi PORTFOLIO</h2>
+            </div>
+            <nav class="nav-box">
+                <ul class="nav">
+                    <a href="">
+                        <li class="nav-item">HOME</li>
+                    </a>
+                    <a href="">
+                        <li class="nav-item">WORKS</li>
+                    </a>
+                    <a href="">
+                        <li class="nav-item">ABOUT</li>
+                    </a>
+                    <a href="">
+                        <li class="nav-item">SKILL</li>
+                    </a>
+                    <a href="">
+                        <li class="nav-item">SERVICE</li>
+                    </a>
+                    <a href="">
+                        <li class="nav-item">CONTACT</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <h2 class="text-2xl">Hello World!!</h2>
+    <main>
+        <section class="first-view">
+            <div class="p-top__first-view__container">
+                <h1 class="title">
+                    <span class="profession">Web Programmer</span>
+                    <span class="name">Kobayashi</span>
+                </h1>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
