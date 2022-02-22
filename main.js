@@ -20,6 +20,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
+/***/ "./wordpress/wp-content/themes/kobayashi-portfolio/src/js/fade-in.js":
+/*!***************************************************************************!*\
+  !*** ./wordpress/wp-content/themes/kobayashi-portfolio/src/js/fade-in.js ***!
+  \***************************************************************************/
+/***/ (function() {
+
+eval("jQuery(function () {\n  jQuery(window).scroll(function () {\n    jQuery(\".fadein\").each(function () {\n      var elemPos = jQuery(this).offset().top;\n      var scroll = jQuery(window).scrollTop();\n      var windowHeight = jQuery(window).height();\n      if (scroll > elemPos - windowHeight) {\n        jQuery(this).addClass(\"scrollin\");\n      }\n    });\n  });\n});\n\n\n//# sourceURL=webpack://roadmap-beginner/./wordpress/wp-content/themes/kobayashi-portfolio/src/js/fade-in.js?");
+
+/***/ }),
+
 /***/ "./wordpress/wp-content/themes/kobayashi-portfolio/src/js/footer.js":
 /*!**************************************************************************!*\
   !*** ./wordpress/wp-content/themes/kobayashi-portfolio/src/js/footer.js ***!
@@ -57,7 +67,7 @@ eval("jQuery(window).on(\"scroll\", function () {\n  if (450 < jQuery(this).scro
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/style.scss */ \"./wordpress/wp-content/themes/kobayashi-portfolio/src/scss/style.scss\");\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./header */ \"./wordpress/wp-content/themes/kobayashi-portfolio/src/js/header.js\");\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_header__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./footer */ \"./wordpress/wp-content/themes/kobayashi-portfolio/src/js/footer.js\");\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_footer__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _hamburger_menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./hamburger-menu */ \"./wordpress/wp-content/themes/kobayashi-portfolio/src/js/hamburger-menu.js\");\n/* harmony import */ var _hamburger_menu__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_hamburger_menu__WEBPACK_IMPORTED_MODULE_3__);\n\n\n\n\n\n\n//# sourceURL=webpack://roadmap-beginner/./wordpress/wp-content/themes/kobayashi-portfolio/src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/style.scss */ \"./wordpress/wp-content/themes/kobayashi-portfolio/src/scss/style.scss\");\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./header */ \"./wordpress/wp-content/themes/kobayashi-portfolio/src/js/header.js\");\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_header__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./footer */ \"./wordpress/wp-content/themes/kobayashi-portfolio/src/js/footer.js\");\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_footer__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _hamburger_menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./hamburger-menu */ \"./wordpress/wp-content/themes/kobayashi-portfolio/src/js/hamburger-menu.js\");\n/* harmony import */ var _hamburger_menu__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_hamburger_menu__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _fade_in__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./fade-in */ \"./wordpress/wp-content/themes/kobayashi-portfolio/src/js/fade-in.js\");\n/* harmony import */ var _fade_in__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_fade_in__WEBPACK_IMPORTED_MODULE_4__);\n\n\n\n\n\n\n\n//# sourceURL=webpack://roadmap-beginner/./wordpress/wp-content/themes/kobayashi-portfolio/src/js/index.js?");
 
 /***/ })
 

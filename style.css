@@ -796,8 +796,6 @@ footer .copyright {
 html {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  font-size: 62.5%;
-  /*rem算出をしやすくするために*/
 }
 
 .btn,
@@ -827,7 +825,7 @@ button.btn {
 a.btn-sns {
   border-radius: 50%;
   color: #fff;
-  font-size: 2.4rem;
+  font-size: 1.5rem;
   height: 50px;
   letter-spacing: 0;
   line-height: 50px;
@@ -851,6 +849,22 @@ a.btn-sns--instagram {
   background: #d6249f;
   background: -webkit-linear-gradient(45deg, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
   background: linear-gradient(45deg, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+}
+
+/* 画面外にいる状態 */
+.fadein {
+  -webkit-transform: translate(0, 50px);
+  -webkit-transition: all 2s;
+  opacity: 0;
+          transform: translate(0, 50px);
+  transition: all 2s;
+}
+
+/* 画面内に入った状態 */
+.fadein.scrollin {
+  -webkit-transform: translate(0, 0);
+  opacity: 1;
+          transform: translate(0, 0);
 }
 
 /* Project */
@@ -1114,7 +1128,7 @@ a.btn-sns--instagram {
 }
 .p-about__container .title-box .title {
   color: #2cb1c1;
-  font-size: 4rem;
+  font-size: 2.5rem;
 }
 .p-about__container .img-box {
   height: auto;
@@ -1131,7 +1145,13 @@ a.btn-sns--instagram {
   text-align: center;
 }
 .p-about__container .sns-icon-box .btn {
+  -webkit-transition: 0.5s;
   margin: 0 10px;
+  transition: 0.5s;
+}
+.p-about__container .sns-icon-box .btn:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 /* Utility */

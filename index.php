@@ -2,7 +2,7 @@
 <main>
     <section id="first-view">
         <div class="p-top__first-view__container">
-            <h1 class="title">
+            <h1 class="title fadein">
                 <span class="profession">Web Programmer</span>
                 <span class="name">Kobayashi</span>
             </h1>
