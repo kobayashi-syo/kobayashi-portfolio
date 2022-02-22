@@ -7,7 +7,6 @@
  * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
  */
 /******/ (function() { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./wordpress/wp-content/themes/kobayashi-portfolio/src/scss/style.scss":
@@ -16,7 +15,38 @@
   \*****************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
+"use strict";
 eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://roadmap-beginner/./wordpress/wp-content/themes/kobayashi-portfolio/src/scss/style.scss?");
+
+/***/ }),
+
+/***/ "./wordpress/wp-content/themes/kobayashi-portfolio/src/js/footer.js":
+/*!**************************************************************************!*\
+  !*** ./wordpress/wp-content/themes/kobayashi-portfolio/src/js/footer.js ***!
+  \**************************************************************************/
+/***/ (function() {
+
+eval("jQuery(window).on(\"scroll\", function () {\n  if (600 < jQuery(this).scrollTop()) {\n    jQuery(\".top-btn\").addClass(\"footer-scroll\");\n  } else if (600 > jQuery(this).scrollTop()) {\n    jQuery(\".top-btn\").removeClass(\"footer-scroll\");\n  }\n});\n\n\n//# sourceURL=webpack://roadmap-beginner/./wordpress/wp-content/themes/kobayashi-portfolio/src/js/footer.js?");
+
+/***/ }),
+
+/***/ "./wordpress/wp-content/themes/kobayashi-portfolio/src/js/hamburger-menu.js":
+/*!**********************************************************************************!*\
+  !*** ./wordpress/wp-content/themes/kobayashi-portfolio/src/js/hamburger-menu.js ***!
+  \**********************************************************************************/
+/***/ (function() {
+
+eval("jQuery(\".openbtn4\").click(function () {\n  //ボタンがクリックされたら\n  jQuery(this).toggleClass(\"active\"); //ボタン自身に activeクラスを付与し\n  jQuery(\"#nav-box\").toggleClass(\"panelactive\"); //ナビゲーションにpanelactiveクラスを付与\n});\n\njQuery(\"#nav-box a\").click(function () {\n  //ナビゲーションのリンクがクリックされたら\n  jQuery(\".openbtn4\").removeClass(\"active\"); //ボタンの activeクラスを除去し\n  jQuery(\"#nav-box\").removeClass(\"panelactive\"); //ナビゲーションのpanelactiveクラスも除去\n});\n\n//# sourceURL=webpack://roadmap-beginner/./wordpress/wp-content/themes/kobayashi-portfolio/src/js/hamburger-menu.js?");
+
+/***/ }),
+
+/***/ "./wordpress/wp-content/themes/kobayashi-portfolio/src/js/header.js":
+/*!**************************************************************************!*\
+  !*** ./wordpress/wp-content/themes/kobayashi-portfolio/src/js/header.js ***!
+  \**************************************************************************/
+/***/ (function() {
+
+eval("jQuery(window).on(\"scroll\", function () {\n  if (450 < jQuery(this).scrollTop()) {\n    jQuery(\".header__bg-color__box\").addClass(\"change-color\");\n    jQuery(\".logo\").addClass(\"color-black\");\n    jQuery(\".nav-link\").addClass(\"color-black\");\n    jQuery(\".ham-border\").addClass(\"ham-color\");\n  } else if (450 > jQuery(this).scrollTop()) {\n    jQuery(\".header__bg-color__box\").removeClass(\"change-color\");\n    jQuery(\".logo\").removeClass(\"color-black\");\n    jQuery(\".nav-link\").removeClass(\"color-black\");\n    jQuery(\".ham-border\").removeClass(\"ham-color\");\n  }\n});\n\n\n//# sourceURL=webpack://roadmap-beginner/./wordpress/wp-content/themes/kobayashi-portfolio/src/js/header.js?");
 
 /***/ }),
 
@@ -26,7 +56,8 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
   \*************************************************************************/
 /***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/style.scss */ \"./wordpress/wp-content/themes/kobayashi-portfolio/src/scss/style.scss\");\n\n\n\n//# sourceURL=webpack://roadmap-beginner/./wordpress/wp-content/themes/kobayashi-portfolio/src/js/index.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/style.scss */ \"./wordpress/wp-content/themes/kobayashi-portfolio/src/scss/style.scss\");\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./header */ \"./wordpress/wp-content/themes/kobayashi-portfolio/src/js/header.js\");\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_header__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./footer */ \"./wordpress/wp-content/themes/kobayashi-portfolio/src/js/footer.js\");\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_footer__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _hamburger_menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./hamburger-menu */ \"./wordpress/wp-content/themes/kobayashi-portfolio/src/js/hamburger-menu.js\");\n/* harmony import */ var _hamburger_menu__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_hamburger_menu__WEBPACK_IMPORTED_MODULE_3__);\n\n\n\n\n\n\n//# sourceURL=webpack://roadmap-beginner/./wordpress/wp-content/themes/kobayashi-portfolio/src/js/index.js?");
 
 /***/ })
 
@@ -57,6 +88,35 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scs
 /******/ 	}
 /******/ 	
 /************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	!function() {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = function(module) {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				function() { return module['default']; } :
+/******/ 				function() { return module; };
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	!function() {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = function(exports, definition) {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	!function() {
+/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
+/******/ 	}();
+/******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	!function() {
 /******/ 		// define __esModule on exports

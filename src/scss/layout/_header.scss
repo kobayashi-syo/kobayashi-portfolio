@@ -1,32 +1,94 @@
-.l-header{
-    background-color: beige;
-    & .header-container{
-        display: flex;
-        justify-content: space-between;
-        max-width: 1500px;
-        margin: 0 auto;
-        & .logo-box{
-            & h2{
-                font-size: 1.2rem;
-                padding-left: 40px;
-                color: green;
-                margin-top: 1.2rem;
-            }
-        }
-        & .nav-box{
-            padding-right: 40px;
-            padding-top: 8px;
-            & .nav{
-                display: flex;
-                & a{
-                    padding-left: 20px;
-                    text-decoration: none;
-                    color: black;
-                    & .nav-item{
-                        font-size: 14px;
-                    }
-                }
-            }
-        }
+.l-header {
+  background-color: rgba(white, $alpha: 0);
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  transition: 1s;
+  z-index: 20;
+  & .header-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1500px;
+    margin: 0 auto;
+    width: 100vw;
+    & .logo-btn {
+      text-decoration: none;
     }
+    & .logo-box {
+      & .logo {
+        font-size: 1rem;
+        padding-left: 20px;
+        color: #2DB1C1;
+        margin-top: 1.2rem;
+        transition: 0.5s;
+        @include sm{
+          padding-left: 40px;
+          font-size: 1.2rem;
+        }
+        @include lg{
+          font-size: 1.4rem;
+        }
+      }
+    }
+    & .openbtn4 {
+      display: none;
+    }
+    & #nav-box {
+      padding-right: 40px;
+      padding-top: 8px;
+      & .nav {
+        display: flex;
+        & .nav-link {
+          padding-left: 18px;
+          text-decoration: none;
+          color: #2DB1C1;
+          transition: 0.5s;
+          & .nav-item {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.header__bg-color__box {
+  width: 100vw;
+  height: 60px;
+  transition: 0.5s;
+  position: fixed;
+  top: 0;
+  z-index: 5;
+  transition: 0.5s;
+  background-color: rgba($color: white, $alpha: 1);
+  box-shadow: 2px 0 10px gray;
+  @include sm{
+    height: 80px;
+  }
+}
+
+.change-color {
+  z-index: 18 !important;
+  background-color: rgba($color: white, $alpha: 1);
+}
+
+.color-black {
+  color: black !important;
+}
+
+.ham-color{
+  background-color: black !important;
+  &::after{
+    color: black !important;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .l-header {
+    & .header-container {
+      & .openbtn4 {
+        display: block;
+      }
+    }
+  }
 }

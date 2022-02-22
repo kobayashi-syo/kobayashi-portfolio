@@ -1,0 +1,31 @@
+.p-about {
+  &__container {
+    max-width: 1000px;
+    margin: 0 auto;
+    & .title-box {
+      text-align: center;
+      margin-top: 150px;
+      & .title {
+        color: #2cb1c1;
+        font-size: 4rem;
+      }
+    }
+    & .img-box{
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+        text-align: center;
+        & img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    & .sns-icon-box{
+      text-align: center;
+      padding: 10px 0;
+      & .btn{
+        margin: 0 10px;
+      }
+    }
+  }
+}

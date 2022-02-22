@@ -3,14 +3,20 @@
 /* Foundation */
 @import 'foundation/_reset';
 @import 'foundation/_base';
+@import 'foundation/_mediaquery';
+@import 'foundation/_hamburger';
 
 /* Layout */
 @import 'layout/_header';
+@import 'layout/_footer';
 
 /* Component */
+@import 'object/component/_btn-base';
+@import 'object/component/_sns-btn';
 
 /* Project */
-@import 'object/project/_top'
+@import 'object/project/_top';
+@import 'object/project/_about';
 
 /* Utility */
 

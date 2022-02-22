@@ -1,0 +1,52 @@
+footer{
+    width: 100vw;
+    max-width: 1500px;
+    margin: 0 auto;
+    & .top-btn{
+        position: fixed;
+        bottom: 3rem;
+        right: 3rem;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: #2db2c1;
+        opacity: 0;
+        transition: 0.5s;
+        & a{
+            display: flex;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 2.2rem;
+            color: white;
+        }
+    }
+    & nav{
+        & ul{
+            display: flex;
+            justify-content: space-around;
+            margin: 0 auto;
+            padding-top: 50px;
+            & a{
+                text-decoration: none;
+                color: black;
+                font-size: 0.6rem;
+                @include sm{
+                    font-size: 0.7rem;
+                }
+                @include lg{
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+    & .copyright{
+        font-size: 0.5rem;
+        color: rgb(175, 171, 171);
+        text-align: center;
+        padding: 1rem 0 2rem 0;
+    }
+}
+
+.footer-scroll{
+    opacity: 1 !important;
+}
