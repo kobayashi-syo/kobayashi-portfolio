@@ -1,0 +1,47 @@
+.p-works {
+  &__title {
+    font-size: 3rem;
+    margin-top: 5rem;
+    text-align: center;
+    color: #2db0c0;
+  }
+  &__container {
+    padding: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1/2 1/2;
+    grid-template-columns: auto auto;
+    gap: 1.5rem;
+    @include lg {
+      grid-template-rows: 1/4 1/4 1/4 1/4;
+      grid-template-columns: auto auto auto auto;
+    }
+    & .item-box {
+      width: 100%;
+      text-align: left;
+      & .thumbnail-box {
+        width: 100%;
+        height: auto;
+        & img {
+          width: 100%;
+          height: auto;
+        }
+      }
+      & .category{
+          font-size: 0.6rem;
+          & a{
+              color: gray;
+          }
+      }
+    }
+  }
+  &__home-btn {
+    text-align: center;
+    margin-bottom: 5rem;
+    & a {
+      color: #2db0c0;
+      font-size: 1.5rem;
+    }
+  }
+}
