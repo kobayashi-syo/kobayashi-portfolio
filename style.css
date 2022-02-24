@@ -735,7 +735,6 @@ a {
 footer {
   background-color: #e2dede;
   margin: 0 auto;
-  max-width: 1500px;
   width: 100vw;
 }
 footer .top-btn {
@@ -778,6 +777,7 @@ footer nav ul a {
 footer .copyright {
   color: #afabab;
   font-size: 0.5rem;
+  margin-bottom: 0;
   padding: 1rem 0 2rem 0;
   text-align: center;
 }
@@ -1246,6 +1246,9 @@ a.btn-sns--instagram {
 .p-works__home-btn a {
   color: #2db0c0;
   font-size: 1.5rem;
+}
+.p-works__pagination {
+  text-align: center;
 }
 
 /* Utility */

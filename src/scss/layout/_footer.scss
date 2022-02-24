@@ -1,7 +1,6 @@
 footer{
     background-color: rgb(226, 222, 222);
     width: 100vw;
-    max-width: 1500px;
     margin: 0 auto;
     & .top-btn{
         position: fixed;
@@ -45,6 +44,7 @@ footer{
         color: rgb(175, 171, 171);
         text-align: center;
         padding: 1rem 0 2rem 0;
+        margin-bottom: 0;
     }
 }
 
