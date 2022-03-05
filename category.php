@@ -18,38 +18,32 @@
         <?php endforeach; ?>
     </div>
 
-    <div class="p-works__container">
-        <?php
-        global $post;
-        $args = array('posts_per_page' => 8);
-        $myposts = get_posts($args);
-        foreach ($myposts as $post) {
-            setup_postdata($post);
-        ?>
-            <div class="item-box">
-                <div class="thumbnail-box">
-                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('index_thumbnail'); ?></a>
-                </div>
-                <div class="title">
-                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                </div>
-                <div class="category">
-                    <a href="<?php the_permalink(); ?>"><?php the_category(',') ?></a>
-                </div>
-            </div>
-        <?php
-        }
-        wp_reset_postdata();
-        ?>
-        <?php
-        $args = array(
-            'mid_size' => 1,
-            'prev_text' => '&lt;&lt;前へ',
-            'next_text' => '次へ&gt;&gt;',
-            'screen_reader_text' => ' ',
-        );
-        the_posts_pagination($args);
-        ?>
+    <div class="p-category__container">
+        <div class="wrapper">
+            <!--メイン-->
+            <?php if (have_posts()) : ?>
+                <?php while (have_posts()) : the_post(); ?>
+                    <div class="archive-item">
+                        <!--カテゴリー記事一覧をパーツ化して読み込み-->
+                        <article id="post-<?php the_ID(); ?>" <?php post_class('archive-contents'); ?>>
+                            <div class="archive_eyecatch">
+                                <a href="<?php the_permalink(); ?>">
+                                    <?php if (has_post_thumbnail()) : ?>
+                                        <?php the_post_thumbnail('full'); ?>
+                                    <?php endif; ?>
+                                </a>
+                            </div>
+                            <?php the_category(); ?>
+                            <div class="archive_meta">
+                                <a href="<?php the_permalink(); ?>">
+                                    <h2 class="archive_title"><?php the_title(); ?></h2>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                <?php endwhile; ?>
+            <?php endif; ?>
+        </div>
     </div>
     <div class="p-works__pagination">
         <div class="pagination">

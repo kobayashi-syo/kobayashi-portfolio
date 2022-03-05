@@ -33,13 +33,13 @@
                     <a href="/about" class="nav-link">
                         <li class="nav-item">ABOUT</li>
                     </a>
-                    <a href="" class="nav-link">
+                    <a href="/skill" class="nav-link">
                         <li class="nav-item">SKILL</li>
                     </a>
-                    <a href="" class="nav-link">
+                    <a href="/#service" class="nav-link">
                         <li class="nav-item">SERVICE</li>
                     </a>
-                    <a href="" class="nav-link">
+                    <a href="/contact" class="nav-link">
                         <li class="nav-item">CONTACT</li>
                     </a>
                 </ul>

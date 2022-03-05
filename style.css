@@ -1241,6 +1241,7 @@ a.btn-sns--instagram {
 }
 .p-works__home-btn {
   margin-bottom: 5rem;
+  margin-top: 70px;
   text-align: center;
 }
 .p-works__home-btn a {
@@ -1249,6 +1250,185 @@ a.btn-sns--instagram {
 }
 .p-works__pagination {
   text-align: center;
+}
+.p-works__pagination .pagination {
+  margin: 40px 0 0;
+}
+.p-works__pagination .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.p-works__pagination .pagination .page-numbers {
+  -webkit-box-shadow: 0 3px 3px #999;
+  background: #fff;
+  border-radius: 3px;
+          box-shadow: 0 3px 3px #999;
+  color: #333;
+  display: inline-block;
+  margin-right: 20px;
+  padding: 20px 25px;
+}
+.p-works__pagination .pagination .current {
+  background: #69a4db;
+  color: #fff;
+  padding: 20px 25px;
+}
+.p-works__pagination .pagination .prev,
+.p-works__pagination .pagination .next {
+  -webkit-box-shadow: none;
+  background: transparent;
+          box-shadow: none;
+  color: #69a4db;
+}
+.p-works__pagination .pagination .dots {
+  -webkit-box-shadow: none;
+  background: transparent;
+          box-shadow: none;
+}
+.p-works__pagination .pagination {
+  margin: 40px 0 0;
+}
+.p-works__pagination .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.p-works__pagination .pagination .page-numbers {
+  -webkit-box-shadow: 0 3px 3px #999;
+  background: #fff;
+  border-radius: 3px;
+          box-shadow: 0 3px 3px #999;
+  color: #333;
+  display: inline-block;
+  margin-right: 20px;
+  padding: 15px 20px;
+}
+.p-works__pagination .pagination .current {
+  background: #63829e;
+  color: #fff;
+  padding: 15px 20px;
+}
+.p-works__pagination .pagination .prev,
+.p-works__pagination .pagination .next {
+  -webkit-box-shadow: none;
+  background: transparent;
+          box-shadow: none;
+  color: #69a4db;
+}
+.p-works__pagination .pagination .dots {
+  -webkit-box-shadow: none;
+  background: transparent;
+          box-shadow: none;
+}
+
+.categories-lists {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+.categories-lists .categorie-list {
+  margin-left: 2rem;
+}
+.categories-lists .categorie-list .categorie {
+  color: gray;
+}
+
+.p-category__container .wrapper {
+  -ms-grid-rows: 1/2 1.5rem 1/2;
+  -ms-grid-columns: auto 1.5rem auto;
+  display: -ms-grid;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1/2 1/2;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.p-category__container .wrapper > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.p-category__container .wrapper > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.p-category__container .wrapper > *:nth-child(3) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+
+.p-category__container .wrapper > *:nth-child(4) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+
+.p-category__container .wrapper > *:nth-child(5) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+}
+
+.p-category__container .wrapper > *:nth-child(6) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+}
+
+.p-category__container .wrapper > *:nth-child(7) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+}
+
+.p-category__container .wrapper > *:nth-child(8) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 3;
+}
+
+.p-category__container .wrapper > *:nth-child(9) {
+  -ms-grid-row: 9;
+  -ms-grid-column: 1;
+}
+
+.p-category__container .wrapper > *:nth-child(10) {
+  -ms-grid-row: 9;
+  -ms-grid-column: 3;
+}
+
+.p-category__container .wrapper > *:nth-child(11) {
+  -ms-grid-row: 11;
+  -ms-grid-column: 1;
+}
+
+.p-category__container .wrapper > *:nth-child(12) {
+  -ms-grid-row: 11;
+  -ms-grid-column: 3;
+}
+.p-category__container .wrapper .archive_eyecatch {
+  height: auto;
+  width: 100%;
+}
+.p-category__container .wrapper .archive_eyecatch img {
+  height: auto;
+  width: 100%;
+}
+.p-category__container .wrapper .post-categories {
+  margin: 0;
+  padding-left: 0;
+}
+.p-category__container .wrapper .post-categories li {
+  text-align: left;
+}
+.p-category__container .wrapper .archive_title {
+  font-size: 1rem;
+  margin: 0;
+  text-align: left;
+}
+.p-category__container .wrapper li {
+  list-style: none;
 }
 
 /* Utility */
@@ -1695,6 +1875,76 @@ a.btn-sns--instagram {
   }
   .p-works__container > *:nth-child(48) {
     -ms-grid-row: 12;
+    -ms-grid-column: 4;
+  }
+  .p-category__container .wrapper {
+    -ms-grid-rows: 25% 25% 25% 25%;
+    -ms-grid-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 25% 25% 25% 25%;
+  }
+  .p-category__container .wrapper > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .p-category__container .wrapper > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+  .p-category__container .wrapper > *:nth-child(3) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  .p-category__container .wrapper > *:nth-child(4) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+  }
+  .p-category__container .wrapper > *:nth-child(5) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  .p-category__container .wrapper > *:nth-child(6) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+  .p-category__container .wrapper > *:nth-child(7) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+  }
+  .p-category__container .wrapper > *:nth-child(8) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 4;
+  }
+  .p-category__container .wrapper > *:nth-child(9) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .p-category__container .wrapper > *:nth-child(10) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+  }
+  .p-category__container .wrapper > *:nth-child(11) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+  }
+  .p-category__container .wrapper > *:nth-child(12) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 4;
+  }
+  .p-category__container .wrapper > *:nth-child(13) {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+  }
+  .p-category__container .wrapper > *:nth-child(14) {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+  }
+  .p-category__container .wrapper > *:nth-child(15) {
+    -ms-grid-row: 4;
+    -ms-grid-column: 3;
+  }
+  .p-category__container .wrapper > *:nth-child(16) {
+    -ms-grid-row: 4;
     -ms-grid-column: 4;
   }
 }

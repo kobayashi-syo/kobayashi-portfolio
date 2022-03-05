@@ -1,0 +1,40 @@
+.p-category {
+  &__container {
+    & .wrapper {
+      padding: 2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      display: grid;
+      grid-template-rows: 1/2 1/2;
+      grid-template-columns: auto auto;
+      gap: 1.5rem;
+      @include lg {
+        grid-template-rows: 25% 25% 25% 25%;
+        grid-template-columns: auto auto auto auto;
+      }
+      & .archive_eyecatch{
+          width: 100%;
+          height: auto;
+          & img{
+              width: 100%;
+              height: auto;
+          }
+      }
+      & .post-categories{
+          margin: 0;
+          padding-left: 0;
+          & li{
+              text-align: left;
+          }
+      }
+      & .archive_title{
+          font-size: 1rem;
+          text-align: left;
+          margin: 0;
+      }
+      & li {
+        list-style: none;
+      }
+    }
+  }
+}
