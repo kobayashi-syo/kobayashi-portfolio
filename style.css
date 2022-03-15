@@ -1431,6 +1431,13 @@ a.btn-sns--instagram {
   list-style: none;
 }
 
+.mw_wp_form {
+  padding: 4rem 1rem;
+}
+.mw_wp_form dd {
+  margin: 0;
+}
+
 /* Utility */
 
 @media only screen and (min-width: 640px){
