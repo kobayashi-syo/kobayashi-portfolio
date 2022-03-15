@@ -12,7 +12,7 @@
     <section id="service">
         <div class="p-top__service">
             <div class="info-box">
-                <p class="info">2022年2月は、まだ対応可能な枠がございます。<br>お仕事のご依頼は<a href="<?php echo get_template_directory_uri(); ?>/contact/" class="info__link">こちら</a>からお願いいたします。</p>
+                <p class="info">2022年2月は、まだ対応可能な枠がございます。<br>お仕事のご依頼は<a href="/contact" class="info__link">こちら</a>からお願いいたします。</p>
             </div>
             <div class="p-top__service__container">
                 <h2 class="title">
@@ -55,7 +55,7 @@
                 </div>
             </div>
             <div class="btn-box">
-                <a href="<?php echo get_template_directory_uri(); ?>/contact/" class="btn">お問い合わせ</a>
+                <a href="/contact" class="btn">お問い合わせ</a>
             </div>
         </div>
     </section>
@@ -172,7 +172,7 @@
                 </div>
             </div>
             <div class="btn-box">
-                <a href="<?php echo get_template_directory_uri(); ?>/works/" class="btn">WORKS一覧</a>
+                <a href="/works" class="btn">WORKS一覧</a>
             </div>
         </div>
     </section>
@@ -181,7 +181,7 @@
         <div class="p-top__contact-area">
             <h2 class="message">ご依頼をお待ちしております。</h2>
             <div class="btn-box">
-                <a href="<?php echo get_template_directory_uri(); ?>/contact/" class="btn">お問い合わせ</a>
+                <a href="/contact" class="btn">お問い合わせ</a>
             </div>
         </div>
     </section>
